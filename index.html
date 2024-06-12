@@ -196,14 +196,17 @@ input[type="password" i] {
     </form>
 <script>
         function submitpass(event) {
-            if(document.getElementById("pwd").value === "130818666")
-            window.location.href = "inedx.html";
+            if(document.getElementById("pwd").value === "130818666"){
+				document.getElementById("123456").style.display = "none";
+				window.location.href = "inedx.html";
+			}else{
+				document.getElementById("123456").style.display = "block";
+			}
         }
 		
         </script>
     <br>
-    <div id="123456" style="color: #D8000C;background-color: #FFBABA;">Please Enter the valid password</div>
-
+    <div id="123456" style="color: #D8000C;background-color: #FFBABA; display: none;">Please Enter the valid password</div>
 
 </div>
   
